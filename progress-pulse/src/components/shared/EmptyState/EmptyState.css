@@ -1,0 +1,4 @@
+.pp-empty { text-align: center; padding: 3rem 1rem; color: var(--pp-text-secondary); }
+.pp-empty-icon { font-size: 3rem; margin-bottom: 0.75rem; }
+.pp-empty-title { font-size: 1rem; font-weight: 600; margin-bottom: 0.25rem; color: var(--pp-text-primary); }
+.pp-empty-desc { font-size: 13px; }

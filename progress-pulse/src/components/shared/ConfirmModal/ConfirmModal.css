@@ -1,0 +1,13 @@
+.pp-confirm-overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.45);
+  display: flex; align-items: center; justify-content: center; z-index: 1050;
+}
+.pp-confirm-box {
+  background: var(--pp-bg-card); border-radius: var(--pp-radius);
+  padding: 2rem; width: 100%; max-width: 400px; box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+.pp-confirm-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; }
+.pp-confirm-desc { font-size: 14px; color: var(--pp-text-secondary); margin-bottom: 1.5rem; }
+.pp-confirm-actions { display: flex; gap: 0.75rem; justify-content: flex-end; }
+.pp-confirm-cancel { padding: 8px 20px; border: 1.5px solid var(--pp-border); border-radius: 8px; background: none; cursor: pointer; font-weight: 600; }
+.pp-confirm-ok { padding: 8px 20px; border: none; border-radius: 8px; background: var(--pp-danger); color: #fff; cursor: pointer; font-weight: 600; }

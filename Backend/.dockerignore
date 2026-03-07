@@ -1,0 +1,25 @@
+# Compiled output — Docker will rebuild these
+**/bin/
+**/obj/
+
+# Test projects — not needed in Docker
+**/*.Tests/
+
+# Visual Studio files
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Git
+.git/
+.gitignore
+
+# Secret/local config files
+.env
+**/appsettings.Development.json
+**/appsettings.Local.json
+
+# Logs
+**/*.log
+**/logs/

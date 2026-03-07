@@ -1,0 +1,284 @@
+.wdc-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-left: 4px solid #27235c;
+    border-radius: 14px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: box-shadow 0.15s;
+  }
+  
+  .wdc-card:hover {
+    box-shadow: 0 6px 20px rgba(39,35,92,0.1);
+  }
+  
+  .wdc-card--missing {
+    border-left-color: #dc2626;
+    background: #fff9f9;
+  }
+  
+  /* Header */
+  .wdc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .wdc-emp-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .wdc-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #27235c;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  
+  .wdc-emp-name {
+    font-size: 15px;
+    font-weight: 800;
+    color: #111827;
+  }
+  
+  .wdc-week-label {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Status Badge */
+  .wdc-status {
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  
+  .wdc-status--submitted { background: #d1fae5; color: #065f46; }
+  .wdc-status--missing   { background: #fee2e2; color: #991b1b; }
+  
+  /* No Log */
+  .wdc-no-log {
+    font-size: 13px;
+    color: #dc2626;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    background: #fef2f2;
+    border-radius: 8px;
+    padding: 10px 14px;
+  }
+  
+  /* Log Info */
+  .wdc-log-info {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .wdc-log-title {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #111827;
+    display: flex;
+    align-items: center;
+  }
+  
+  .wdc-log-impact {
+    font-size: 12.5px;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Summary Row */
+  .wdc-summary-row {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .wdc-summary-chip {
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: #f3f4f6;
+    color: #6b7280;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .wdc-quality--excellent { background: #d1fae5; color: #065f46; border-color: #6ee7b7; }
+  .wdc-quality--high      { background: #dbeafe; color: #1e40af; border-color: #93c5fd; }
+  .wdc-quality--medium    { background: #fef3c7; color: #92400e; border-color: #fcd34d; }
+  .wdc-quality--low       { background: #fee2e2; color: #991b1b; border-color: #fca5a5; }
+  
+  /* Goals Section */
+  .wdc-goals-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .wdc-goals-title {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+  }
+  
+  .wdc-goal-row {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .wdc-goal-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .wdc-goal-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: #111827;
+  }
+  
+  .wdc-goal-badges {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  
+  .wdc-badge {
+    display: inline-flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 9px;
+    border-radius: 20px;
+  }
+  
+  .wdc-badge--manager { background: #f0fdfa; color: #0f766e; border: 1px solid #99f6e4; }
+  
+  .wdc-badge--status { background: #ede9fe; color: #27235c; border: 1px solid #c4b5fd; }
+  .wdc-status-completed  { background: #d1fae5; color: #065f46; border-color: #6ee7b7; }
+  .wdc-status-inprogress { background: #fef3c7; color: #92400e; border-color: #fcd34d; }
+  .wdc-status-notstarted { background: #f3f4f6; color: #6b7280; border-color: #e5e7eb; }
+  
+  /* Goal Progress */
+  .wdc-goal-progress-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .wdc-goal-progress-track {
+    flex: 1;
+    background: #e5e7eb;
+    border-radius: 20px;
+    height: 7px;
+    overflow: hidden;
+  }
+  
+  .wdc-goal-progress-fill {
+    height: 100%;
+    border-radius: 20px;
+    background: #27235c;
+    transition: width 0.5s ease;
+  }
+  
+  .wdc-goal-pct {
+    font-size: 12px;
+    font-weight: 700;
+    color: #27235c;
+    white-space: nowrap;
+  }
+  
+  /* Log Chips */
+  .wdc-goal-logs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .wdc-log-chip {
+    display: inline-flex;
+    align-items: center;
+    font-size: 11.5px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: #ede9fe;
+    color: #27235c;
+    border: 1px solid #c4b5fd;
+  }
+  
+  .wdc-goal-no-log {
+    font-size: 12px;
+    color: #9ca3af;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Footer */
+  .wdc-footer {
+    display: flex;
+    gap: 0.5rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #f3f4f6;
+  }
+  
+  .wdc-btn-comment {
+    padding: 7px 16px;
+    background: #27235c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 12.5px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.15s;
+  }
+  
+  .wdc-btn-comment:hover { background: #1e1a4a; }
+  

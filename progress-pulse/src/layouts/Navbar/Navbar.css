@@ -1,0 +1,127 @@
+.pp-navbar {
+  height: var(--pp-navbar-height);
+  background: #ffffff;
+  border-bottom: 1px solid #ebebf5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.75rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 6px rgba(39, 35, 92, 0.07);
+}
+
+/* Brand */
+.pp-navbar-brand {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #27235c;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.pp-navbar-brand span {
+  color: #6366f1;
+}
+
+/* Right Section */
+.pp-navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+/* Date chip */
+.pp-navbar-date {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #6b7280;
+  background: #f5f5fb;
+  border: 1px solid #ebebf5;
+  border-radius: 8px;
+  padding: 5px 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Divider */
+.pp-navbar-divider {
+  width: 1px;
+  height: 26px;
+  background: #ebebf5;
+}
+
+/* User Info Pill */
+.pp-navbar-user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: #f9fafb;
+  border: 1px solid #ebebf5;
+  border-radius: 10px;
+  padding: 5px 12px 5px 8px;
+  transition: background 0.15s;
+}
+
+.pp-navbar-user-info:hover {
+  background: #f0effe;
+  border-color: #c4b5fd;
+}
+
+.pp-navbar-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #27235c, #6366f1);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pp-navbar-name {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.pp-navbar-role-badge {
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  background: #ede9fe;
+  color: #27235c;
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+
+/* Logout Button */
+.pp-navbar-logout {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #fff1f2;
+  border: 1.5px solid #fecdd3;
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-size: 13px;
+  color: #dc2626;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.pp-navbar-logout:hover {
+  background: #dc2626;
+  border-color: #dc2626;
+  color: #ffffff;
+}

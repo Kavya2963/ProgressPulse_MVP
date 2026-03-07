@@ -1,0 +1,119 @@
+.pp-page {
+    padding: 2rem;
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* Avatar Card */
+  .pp-avatar-card {
+    background: var(--card-bg, #ffffff);
+    border: 1px solid var(--border, #e5e7eb);
+    border-radius: 16px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .pp-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .pp-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-primary, #111827);
+  }
+  
+  .pp-email {
+    font-size: 0.9rem;
+    color: var(--text-muted, #6b7280);
+    margin: 0.2rem 0 0.6rem;
+  }
+  
+  .pp-role-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .pp-role-badge.manager {
+    background: #ede9fe;
+    color: #6d28d9;
+  }
+  
+  .pp-role-badge.employee {
+    background: #dbeafe;
+    color: #1d4ed8;
+  }
+  
+  /* Details Card */
+  .pp-details-card {
+    background: var(--card-bg, #ffffff);
+    border: 1px solid var(--border, #e5e7eb);
+    border-radius: 16px;
+    padding: 2rem;
+  }
+  
+  .pp-section-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary, #111827);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border, #e5e7eb);
+  }
+  
+  .pp-detail-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  .pp-detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  
+  .pp-detail-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-muted, #6b7280);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .pp-detail-value {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-primary, #111827);
+  }
+  
+  @media (max-width: 600px) {
+    .pp-detail-row {
+      grid-template-columns: 1fr;
+    }
+  
+    .pp-avatar-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  

@@ -1,0 +1,366 @@
+/* ── Page ── */
+.el-page {
+  padding: 1.5rem 2rem;
+  background: #f7f8fc;
+  min-height: 100%;
+}
+
+/* ── Breadcrumb ── */
+.el-breadcrumb-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+  animation: el-fadein 0.3s ease;
+}
+
+.el-back-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1.5px solid #27235c;
+  background: #fff;
+  color: #27235c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+
+.el-back-btn:hover {
+  background: linear-gradient(135deg, #97247E 0%, #E01950 100%);
+  color: #fff;
+  border-color: transparent;
+}
+
+.el-breadcrumb-item {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.el-breadcrumb-link {
+  cursor: pointer;
+  transition: color 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.el-breadcrumb-link:hover { color: #97247E; }
+
+.el-breadcrumb-sep {
+  font-size: 10px;
+  color: #d1d5db;
+}
+
+.el-breadcrumb-active {
+  color: #27235c;
+  font-weight: 700;
+}
+
+/* ── Header ── */
+.el-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  animation: el-fadein 0.4s ease;
+}
+
+.el-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.el-header-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #97247E 0%, #E01950 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(151,36,126,0.3);
+}
+
+.el-page-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #27235c;
+  margin-bottom: 0.2rem;
+}
+
+.el-page-sub {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.el-count-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #97247E 0%, #E01950 100%);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(151,36,126,0.25);
+}
+
+/* ── Search ── */
+.el-search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1.5px solid #27235c;
+  border-radius: 10px;
+  padding: 0 1rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 1px 4px rgba(39,35,92,0.08);
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.el-search-bar:focus-within {
+  border-color: #97247E;
+  box-shadow: 0 0 0 3px rgba(151,36,126,0.1);
+}
+
+.el-search-icon {
+  color: #9ca3af;
+  font-size: 14px;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+}
+
+.el-search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 11px 0;
+  font-size: 13.5px;
+  background: transparent;
+  color: #111827;
+}
+
+.el-search-input::placeholder { color: #9ca3af; }
+
+.el-search-clear {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  transition: color 0.15s;
+}
+
+.el-search-clear:hover { color: #97247E; }
+
+/* ── Table Wrap ── */
+.el-table-wrap {
+  background: #ffffff;
+  border: 1px solid #e8eaf0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(39,35,92,0.07);
+  animation: el-slideup 0.35s ease;
+}
+
+.el-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* ── Table Head ── */
+.el-table thead tr {
+  background: linear-gradient(90deg, #fdf4fb, #fff0f3);
+  border-bottom: 2px solid #e8eaf0;
+}
+
+.el-table th {
+  padding: 13px 16px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #27235c;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* ── Table Body ── */
+.el-table tbody tr {
+  border-bottom: 1px solid #f3f4f6;
+  transition: background 0.15s;
+}
+
+.el-table tbody tr:last-child { border-bottom: none; }
+
+.el-table tbody tr:hover {
+  background: #fdf8fc;
+}
+
+.el-table td {
+  padding: 14px 16px;
+  font-size: 13.5px;
+  color: #111827;
+  vertical-align: middle;
+}
+
+/* ── Index ── */
+.el-td-index {
+  color: #9ca3af;
+  font-size: 12px;
+  font-weight: 600;
+  width: 44px;
+  text-align: center;
+}
+
+/* ── Employee Avatar + Name ── */
+.el-emp-name-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.el-emp-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #97247E 0%, #E01950 100%);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(151,36,126,0.2);
+  transition: box-shadow 0.2s;
+}
+
+.el-table tbody tr:hover .el-emp-avatar {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 5px #97247E;
+}
+
+.el-emp-name {
+  font-weight: 700;
+  color: #27235c;
+  font-size: 14px;
+}
+
+/* ── Email ── */
+.el-td-email {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* ── Action Buttons ── */
+.el-action-btns {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.el-btn-summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 14px;
+  background: #fdf4fb;
+  color: #27235c;
+  border: 1px solid #e8b4dc;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.el-btn-summary:hover {
+  background: linear-gradient(135deg, #97247E 0%, #E01950 100%);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 2px 8px rgba(151,36,126,0.2);
+  transform: translateY(-1px);
+}
+
+.el-btn-appraisal {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 14px;
+  background: #f0fdf4;
+  color: #16a34a;
+  border: 1.5px solid #bbf7d0;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.el-btn-appraisal:hover {
+  background: #16a34a;
+  color: #ffffff;
+  border-color: #16a34a;
+  transform: translateY(-1px);
+}
+
+.el-btn-assign {
+  padding: 6px 14px;
+  background: linear-gradient(135deg, #97247E 0%, #E01950 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(151,36,126,0.2);
+}
+
+.el-btn-assign:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(151,36,126,0.3);
+}
+
+/* ── Animations ── */
+@keyframes el-fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes el-slideup {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .el-page { padding: 1rem; }
+  .el-action-btns { flex-direction: column; }
+  .el-header-row { flex-direction: column; align-items: flex-start; }
+}

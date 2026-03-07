@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "9kg3hTI9BktqE2K2ThqdbJyCXQM1tNtufqwxwtxWGwU=",
+  "Source": "Relevantz.ProgressPulse.Api",
+  "BasePath": "_content/Relevantz.ProgressPulse.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Relevantz.ProgressPulse.Api\\wwwroot",
+      "Source": "Relevantz.ProgressPulse.Api",
+      "ContentRoot": "D:\\MVP_Version2\\Backend\\Relevantz.ProgressPulse.Api\\wwwroot\\",
+      "BasePath": "_content/Relevantz.ProgressPulse.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\MVP_Version2\\Backend\\Relevantz.ProgressPulse.Api\\wwwroot\\uploads\\b3529164-477f-4d3a-a944-f5c2fdfc4ee3.pdf",
+      "SourceId": "Relevantz.ProgressPulse.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MVP_Version2\\Backend\\Relevantz.ProgressPulse.Api\\wwwroot\\",
+      "BasePath": "_content/Relevantz.ProgressPulse.Api",
+      "RelativePath": "uploads/b3529164-477f-4d3a-a944-f5c2fdfc4ee3.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\b3529164-477f-4d3a-a944-f5c2fdfc4ee3.pdf"
+    }
+  ]
+}

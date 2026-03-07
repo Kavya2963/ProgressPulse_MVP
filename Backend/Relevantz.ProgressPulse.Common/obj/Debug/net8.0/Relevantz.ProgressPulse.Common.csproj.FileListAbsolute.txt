@@ -1,0 +1,12 @@
+D:\MVP_Version2\Backend\Relevantz.ProgressPulse.Common\bin\Debug\net8.0\Relevantz.ProgressPulse.Common.deps.json
+D:\MVP_Version2\Backend\Relevantz.ProgressPulse.Common\bin\Debug\net8.0\Relevantz.ProgressPulse.Common.dll
+D:\MVP_Version2\Backend\Relevantz.ProgressPulse.Common\bin\Debug\net8.0\Relevantz.ProgressPulse.Common.pdb
+D:\MVP_Version2\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\Relevantz.ProgressPulse.Common.csproj.AssemblyReference.cache
+D:\MVP_Version2\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\Relevantz.ProgressPulse.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\MVP_Version2\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\Relevantz.ProgressPulse.Common.AssemblyInfoInputs.cache
+D:\MVP_Version2\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\Relevantz.ProgressPulse.Common.AssemblyInfo.cs
+D:\MVP_Version2\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\Relevantz.ProgressPulse.Common.csproj.CoreCompileInputs.cache
+D:\MVP_Version2\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\Relevantz.ProgressPulse.Common.dll
+D:\MVP_Version2\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\refint\Relevantz.ProgressPulse.Common.dll
+D:\MVP_Version2\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\Relevantz.ProgressPulse.Common.pdb
+D:\MVP_Version2\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\ref\Relevantz.ProgressPulse.Common.dll

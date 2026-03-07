@@ -1,0 +1,18 @@
+:root {
+  --pp-primary: #4f46e5;
+  --pp-primary-dark: #3730a3;
+  --pp-primary-light: #e0e7ff;
+  --pp-accent: #06b6d4;
+  --pp-success: #10b981;
+  --pp-warning: #f59e0b;
+  --pp-danger: #ef4444;
+  --pp-text-primary: #1e293b;
+  --pp-text-secondary: #64748b;
+  --pp-bg: #f1f5f9;
+  --pp-bg-card: #ffffff;
+  --pp-border: #e2e8f0;
+  --pp-sidebar-width: 240px;
+  --pp-navbar-height: 64px;
+  --pp-radius: 10px;
+  --pp-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}

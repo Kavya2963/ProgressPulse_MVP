@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\MVP_Version2\\Backend\\Relevantz.ProgressPulse.Api\\wwwroot\\uploads\\b3529164-477f-4d3a-a944-f5c2fdfc4ee3.pdf",
+      "PackagePath": "staticwebassets\\uploads\\b3529164-477f-4d3a-a944-f5c2fdfc4ee3.pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Relevantz.ProgressPulse.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Relevantz.ProgressPulse.Api.props",
+      "PackagePath": "build\\Relevantz.ProgressPulse.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Relevantz.ProgressPulse.Api.props",
+      "PackagePath": "buildMultiTargeting\\Relevantz.ProgressPulse.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Relevantz.ProgressPulse.Api.props",
+      "PackagePath": "buildTransitive\\Relevantz.ProgressPulse.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,165 @@
+version: "3.9"
+
+networks:
+  progresspulse-net:
+    driver: bridge
+
+volumes:
+  mysql_data:
+  ollama_data:
+  redis_data:
+
+services:
+
+  # ─────────────────────────────────────────────
+  # MYSQL DATABASE
+  # ─────────────────────────────────────────────
+  db:
+    image: mysql:8.0
+    container_name: progresspulse_db
+    restart: unless-stopped
+    ports:
+      - "3308:3306"          # 3307 on host so it doesn't clash with your local MySQL
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: progresspulse
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - progresspulse-net
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-p${DB_PASSWORD}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  # ─────────────────────────────────────────────
+  # .NET BACKEND
+  # ─────────────────────────────────────────────
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: progresspulse_backend
+    restart: unless-stopped
+    ports:
+      - "5018:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Docker
+      - ASPNETCORE_URLS=http://+:8080
+      - ConnectionStrings__DefaultConnection=server=progresspulse_db;port=3306;database=progresspulse;user=root;password=${DB_PASSWORD};
+      - Jwt__Key=${JWT_SECRET}
+      - Jwt__Issuer=ProgressPulse
+      - Jwt__Audience=ProgressPulseUsers
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./Relevantz.ProgressPulse.Api/wwwroot/uploads:/app/wwwroot/uploads
+    networks:
+      - progresspulse-net
+
+  # ─────────────────────────────────────────────
+  # REDIS
+  # ─────────────────────────────────────────────
+  redis:
+    image: redis:7.2-alpine
+    container_name: progresspulse_redis
+    restart: unless-stopped
+    ports:
+      - "5334:6379"
+    volumes:
+      - redis_data:/data
+    command: >
+      redis-server
+      --maxmemory 256mb
+      --maxmemory-policy allkeys-lru
+      --save 60 1
+      --loglevel warning
+    networks:
+      - progresspulse-net
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  # ─────────────────────────────────────────────
+  # OLLAMA
+  # ─────────────────────────────────────────────
+  ollama:
+    image: ollama/ollama:latest
+    container_name: progresspulse_ollama
+    restart: unless-stopped
+    ports:
+      - "5333:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+      - ./ollama/entrypoint.sh:/entrypoint.sh
+    entrypoint: ["/bin/bash", "/entrypoint.sh"]
+    environment:
+      - OLLAMA_MODEL=${OLLAMA_MODEL:-llama3.1:8b}
+    networks:
+      - progresspulse-net
+    # healthcheck:
+    #   test: ["CMD-SHELL", "curl -sf http://localhost:11434/api/tags || exit 1"]
+    #   interval: 30s
+    #   timeout: 10s
+    #   retries: 5
+    #   start_period: 60s
+
+  # ─────────────────────────────────────────────
+  # OLLAMA INIT
+  # ─────────────────────────────────────────────
+  ollama-init:
+    image: curlimages/curl:latest
+    container_name: progresspulse_ollama_init
+    restart: "no"
+    depends_on:
+      ollama:
+        condition: service_healthy
+    networks:
+      - progresspulse-net
+    environment:
+      - OLLAMA_MODEL=${OLLAMA_MODEL:-llama3.1:8b}
+    entrypoint: >
+      /bin/sh -c "
+        echo 'Checking model...';
+        INSTALLED=$$(curl -sf http://ollama:11434/api/tags | grep -c \"$$OLLAMA_MODEL\" || true);
+        if [ \"$$INSTALLED\" -gt 0 ]; then
+          echo 'Model already installed.';
+        else
+          echo 'Pulling model...';
+          curl -sf -X POST http://ollama:11434/api/pull \
+            -H 'Content-Type: application/json' \
+            -d \"{\\\"name\\\":\\\"$$OLLAMA_MODEL\\\"}\" \
+            --max-time 600;
+        fi
+      "
+
+  # ─────────────────────────────────────────────
+  # FASTAPI (placeholder — Phase 2)
+  # ─────────────────────────────────────────────
+  fastapi:
+    build:
+      context: ./ai-service/fastapi
+      dockerfile: Dockerfile
+    container_name: progresspulse_fastapi
+    restart: unless-stopped
+    ports:
+      - "8001:8001"
+    environment:
+      - OLLAMA_BASE_URL=http://progresspulse_ollama:11434
+      - REDIS_HOST=progresspulse_redis
+      - REDIS_PORT=6379
+      - OLLAMA_MODEL=${OLLAMA_MODEL:-llama3.1:8b}
+      - CACHE_TTL_SECONDS=${CACHE_TTL_SECONDS:-86400}
+    depends_on:
+      redis:
+        condition: service_healthy
+      ollama-init:
+        condition: service_completed_successfully
+    networks:
+      - progresspulse-net
