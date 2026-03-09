@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-# Ensure curl + grep are available
+# Install curl + grep
 apk add --no-cache curl grep
 
 echo "Checking model..."
