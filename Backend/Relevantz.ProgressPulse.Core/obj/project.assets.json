@@ -1049,11 +1049,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MVP_Version2\\Backend\\Relevantz.ProgressPulse.Core\\Relevantz.ProgressPulse.Core.csproj",
+      "projectUniqueName": "D:\\ProgressPulse\\Backend\\Relevantz.ProgressPulse.Core\\Relevantz.ProgressPulse.Core.csproj",
       "projectName": "Relevantz.ProgressPulse.Core",
-      "projectPath": "D:\\MVP_Version2\\Backend\\Relevantz.ProgressPulse.Core\\Relevantz.ProgressPulse.Core.csproj",
+      "projectPath": "D:\\ProgressPulse\\Backend\\Relevantz.ProgressPulse.Core\\Relevantz.ProgressPulse.Core.csproj",
       "packagesPath": "C:\\Users\\kavya.subramani\\.nuget\\packages\\",
-      "outputPath": "D:\\MVP_Version2\\Backend\\Relevantz.ProgressPulse.Core\\obj\\",
+      "outputPath": "D:\\ProgressPulse\\Backend\\Relevantz.ProgressPulse.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kavya.subramani\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1068,11 +1068,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\MVP_Version2\\Backend\\Relevantz.ProgressPulse.Common\\Relevantz.ProgressPulse.Common.csproj": {
-              "projectPath": "D:\\MVP_Version2\\Backend\\Relevantz.ProgressPulse.Common\\Relevantz.ProgressPulse.Common.csproj"
+            "D:\\ProgressPulse\\Backend\\Relevantz.ProgressPulse.Common\\Relevantz.ProgressPulse.Common.csproj": {
+              "projectPath": "D:\\ProgressPulse\\Backend\\Relevantz.ProgressPulse.Common\\Relevantz.ProgressPulse.Common.csproj"
             },
-            "D:\\MVP_Version2\\Backend\\Relevantz.ProgressPulse.Data\\Relevantz.ProgressPulse.Data.csproj": {
-              "projectPath": "D:\\MVP_Version2\\Backend\\Relevantz.ProgressPulse.Data\\Relevantz.ProgressPulse.Data.csproj"
+            "D:\\ProgressPulse\\Backend\\Relevantz.ProgressPulse.Data\\Relevantz.ProgressPulse.Data.csproj": {
+              "projectPath": "D:\\ProgressPulse\\Backend\\Relevantz.ProgressPulse.Data\\Relevantz.ProgressPulse.Data.csproj"
             }
           }
         }

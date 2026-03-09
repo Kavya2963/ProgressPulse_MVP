@@ -1,0 +1,13 @@
+﻿D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\Class1.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\IService\IAttachmentService.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\IService\IAuthService.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\IService\ICommentService.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\IService\IGoalService.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\IService\IManagerService.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\IService\IWeeklyLogService.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\Service\AttachmentService.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\Service\AuthService.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\Service\CommentService.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\Service\GoalService.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\Service\ManagerService.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\Service\WeeklyLogService.cs

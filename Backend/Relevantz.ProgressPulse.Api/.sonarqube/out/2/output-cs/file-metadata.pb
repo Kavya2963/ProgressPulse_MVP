@@ -1,0 +1,17 @@
+~
+sD:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\obj\Debug\net8.0\Relevantz.ProgressPulse.Core.AssemblyInfo.csutf-8€
+uD:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8€
+uD:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\obj\Debug\net8.0\Relevantz.ProgressPulse.Core.GlobalUsings.g.csutf-8Z
+QD:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\Service\WeeklyLogService.csutf-8X
+OD:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\Service\ManagerService.csutf-8U
+LD:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\Service\GoalService.csutf-8X
+OD:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\Service\CommentService.csutf-8U
+LD:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\Service\AuthService.csutf-8W
+ND:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\IService\IAuthService.csutf-8\
+SD:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\IService\IWeeklyLogService.csutf-8Z
+QD:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\IService\IManagerService.csutf-8W
+ND:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\IService\IGoalService.csutf-8Z
+QD:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\IService\ICommentService.csutf-8[
+RD:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\Service\AttachmentService.csutf-8]
+TD:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\IService\IAttachmentService.csutf-8H
+?D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\Class1.csutf-8

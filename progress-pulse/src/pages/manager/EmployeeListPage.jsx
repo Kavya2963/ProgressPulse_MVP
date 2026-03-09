@@ -4,7 +4,7 @@ import { toast } from "sonner";
 import { getMyEmployees, assignGoalToEmployee } from "../../services/managerService";
 import Loader from "../../components/shared/Loader/Loader";
 import EmptyState from "../../components/shared/EmptyState/EmptyState";
-import GoalFormModal from "../../components/goals/goalFormModal/GoalFormModal";
+import GoalFormModal from "../../components/goals/GoalFormModal/GoalFormModal";
 import "./EmployeeListPage.css";
 import { useNavigate } from "react-router-dom";
 
@@ -14,7 +14,7 @@ export default function EmployeeListPage() {
   const [filtered, setFiltered]     = useState([]);
   const [loading, setLoading]       = useState(true);
   const [search, setSearch]         = useState("");
-  const [assignTarget, setAssignTarget] = useState(null); // { id, name }
+  const [assignTarget, setAssignTarget] = useState(null);  
   const [assigning, setAssigning]   = useState(false);
   const navigate = useNavigate();
 

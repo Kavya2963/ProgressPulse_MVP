@@ -1,0 +1,1 @@
+oRYD:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\Relevantz.ProgressPulse.Core.csproj¢net8.0òCSharp12

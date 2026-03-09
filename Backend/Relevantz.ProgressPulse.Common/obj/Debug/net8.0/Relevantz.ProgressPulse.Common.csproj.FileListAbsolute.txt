@@ -10,3 +10,16 @@ D:\MVP_Version2\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\Relevant
 D:\MVP_Version2\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\refint\Relevantz.ProgressPulse.Common.dll
 D:\MVP_Version2\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\Relevantz.ProgressPulse.Common.pdb
 D:\MVP_Version2\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\ref\Relevantz.ProgressPulse.Common.dll
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Common\bin\Debug\net8.0\Relevantz.ProgressPulse.Common.deps.json
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Common\bin\Debug\net8.0\Relevantz.ProgressPulse.Common.dll
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Common\bin\Debug\net8.0\Relevantz.ProgressPulse.Common.pdb
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\Relevantz.ProgressPulse.Common.csproj.AssemblyReference.cache
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\Relevantz.ProgressPulse.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\Relevantz.ProgressPulse.Common.AssemblyInfoInputs.cache
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\Relevantz.ProgressPulse.Common.AssemblyInfo.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\Relevantz.ProgressPulse.Common.csproj.CoreCompileInputs.cache
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\Relevantz.ProgressPulse.Common.sourcelink.json
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\Relevantz.ProgressPulse.Common.dll
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\refint\Relevantz.ProgressPulse.Common.dll
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\Relevantz.ProgressPulse.Common.pdb
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Common\obj\Debug\net8.0\ref\Relevantz.ProgressPulse.Common.dll

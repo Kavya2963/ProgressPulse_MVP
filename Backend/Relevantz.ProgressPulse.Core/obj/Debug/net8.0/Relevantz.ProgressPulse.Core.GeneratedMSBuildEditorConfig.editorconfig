@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Relevantz.ProgressPulse.Core
-build_property.ProjectDir = D:\MVP_Version2\Backend\Relevantz.ProgressPulse.Core\
+build_property.ProjectDir = D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Core\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

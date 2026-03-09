@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>Relevantz.ProgressPulse.Data</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>51d3989c-ec9b-46f6-afec-278013eaafab</ProjectGuid>
+  <FullPath>D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Data\Relevantz.ProgressPulse.Data.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResultFiles>
+    <AnalysisResultFile Id="FilesToAnalyze" Location="D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Api\.sonarqube\conf\1\FilesToAnalyze.txt" />
+  </AnalysisResultFiles>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Api\.sonarqube\out\1\Issues.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Api\.sonarqube\out\1</Property>
+    <Property Name="sonar.cs.scanner.telemetry">D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Api\.sonarqube\out\1\Telemetry.json</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+  <TargetFramework>net8.0</TargetFramework>
+</ProjectInfo>

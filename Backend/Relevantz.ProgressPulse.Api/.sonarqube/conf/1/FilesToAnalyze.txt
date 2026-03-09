@@ -1,0 +1,15 @@
+﻿D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Data\Class1.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Data\DBContexts\AppDbContext.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Data\IRepository\IGoalRepository.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Data\IRepository\IWeeklyLogRepository.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Data\Migrations\20260227143944_InitialMigrate.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Data\Migrations\20260227143944_InitialMigrate.Designer.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Data\Migrations\20260228045522_AddTargetCountToGoal.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Data\Migrations\20260228045522_AddTargetCountToGoal.Designer.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Data\Migrations\20260228051900_FixCommentForeignKey.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Data\Migrations\20260228051900_FixCommentForeignKey.Designer.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Data\Migrations\20260303072029_AddManagerFieldsToGoal.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Data\Migrations\20260303072029_AddManagerFieldsToGoal.Designer.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Data\Migrations\AppDbContextModelSnapshot.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Data\Repository\GoalRepository.cs
+D:\ProgressPulse\Backend\Relevantz.ProgressPulse.Data\Repository\WeeklyLogRepository.cs
