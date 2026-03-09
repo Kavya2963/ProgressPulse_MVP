@@ -100,15 +100,17 @@ services:
       - ./ollama/entrypoint.sh:/entrypoint.sh
     entrypoint: ["/bin/bash", "/entrypoint.sh"]
     environment:
-    - OLLAMA_MODEL=${OLLAMA_MODEL:-llama3.1:8b}
+      - OLLAMA_MODEL=${OLLAMA_MODEL:-llama3.1:8b}
     networks:
-    - progresspulse-net
-    healthcheck:
-      test: ["CMD-SHELL", "curl -sf http://127.0.0.1:11434/api/tags || exit 1"]
-      interval: 30s
-      timeout: 10s
-      retries: 5
-      start_period: 120s
+      - progresspulse-net
+    # healthcheck:
+    #   test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:11434/api/tags || exit 1"]
+    #   interval: 30s
+    #   timeout: 10s
+    #   retries: 10
+    #   start_period: 300s
+
+
 
 
   # ─────────────────────────────────────────────
@@ -118,9 +120,9 @@ services:
     image: curlimages/curl:latest
     container_name: progresspulse_ollama_init
     restart: "no"
-    depends_on:
-      ollama:
-        condition: service_healthy
+    # depends_on:
+    #   ollama:
+    #     condition: service_healthy
     networks:
       - progresspulse-net
     environment:
