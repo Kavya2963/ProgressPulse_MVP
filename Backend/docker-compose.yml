@@ -116,17 +116,17 @@ services:
   # ─────────────────────────────────────────────
   # OLLAMA INIT
   # ─────────────────────────────────────────────
-  ollama-init:
-    image: alpine:3.19
-    container_name: progresspulse_ollama_init
-    restart: "no"
-    networks:
-      - progresspulse-net
-    environment:
-      - OLLAMA_MODEL=${OLLAMA_MODEL:-llama3.1:8b}
-    volumes:
-      - ./ollama/init.sh:/init.sh
-    entrypoint: ["/bin/sh", "/init.sh"]
+  # ollama-init:
+  #   image: alpine:3.19
+  #   container_name: progresspulse_ollama_init
+  #   restart: "no"
+  #   networks:
+  #     - progresspulse-net
+  #   environment:
+  #     - OLLAMA_MODEL=${OLLAMA_MODEL:-llama3.1:8b}
+  #   volumes:
+  #     - ./ollama/init.sh:/init.sh
+  #   entrypoint: ["/bin/sh", "/init.sh"]
 
 
   # ─────────────────────────────────────────────
@@ -149,7 +149,7 @@ services:
     depends_on:
       redis:
         condition: service_healthy
-      ollama-init:
-        condition: service_completed_successfully
+      # ollama-init:
+      #   condition: service_completed_successfully
     networks:
       - progresspulse-net
