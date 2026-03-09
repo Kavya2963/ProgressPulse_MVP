@@ -117,30 +117,20 @@ services:
   # OLLAMA INIT
   # ─────────────────────────────────────────────
   ollama-init:
-    image: curlimages/curl:latest
+    image: alpine:3.19
     container_name: progresspulse_ollama_init
     restart: "no"
-    # depends_on:
-    #   ollama:
-    #     condition: service_healthy
     networks:
       - progresspulse-net
     environment:
       - OLLAMA_MODEL=${OLLAMA_MODEL:-llama3.1:8b}
-    entrypoint: >
-      /bin/sh -c "
-        echo 'Checking model...';
-        INSTALLED=$$(curl -sf http://ollama:11434/api/tags | grep -c \"$$OLLAMA_MODEL\" || true);
-        if [ \"$$INSTALLED\" -gt 0 ]; then
-          echo 'Model already installed.';
-        else
-          echo 'Pulling model...';
-          curl -sf -X POST http://ollama:11434/api/pull \
-            -H 'Content-Type: application/json' \
-            -d \"{\\\"name\\\":\\\"$$OLLAMA_MODEL\\\"}\" \
-            --max-time 600;
-        fi
-      "
+    volumes:
+      - ./ollama/init.sh:/init.sh
+    entrypoint: ["/bin/sh", "/init.sh"]
+
+
+
+
 
   # ─────────────────────────────────────────────
   # FASTAPI (placeholder — Phase 2)
